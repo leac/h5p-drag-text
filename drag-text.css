@@ -28,6 +28,10 @@
   font-family: 'H5PFontAwesome4';
   padding-right: 0.5em;
 }
+.dir-rtl .h5p-drag-text button.h5p-drag-button:before{
+  padding-right: initial;
+  padding-left: 0.5em;
+}
 
 /* Button icons */
 .h5p-drag-text .h5p-drag-check-button:before {
@@ -58,6 +62,10 @@
   position: absolute;
   z-index: 4;
 }
+.dir-rtl .h5p-drag-text .joubel-tip-container{
+  right: auto;
+  left: -1.2em;
+}
 
 /* Feedback for dropzones */
 .h5p-drag-text .h5p-drag-correct-feedback:before {
@@ -67,6 +75,10 @@
   content: "\f00c";
   color: #255c41;
 }
+.dir-rtl .h5p-drag-text .h5p-drag-correct-feedback:before{
+  right: auto;
+  left: 0.3em;
+}
 
 .h5p-drag-text .h5p-drag-wrong-feedback:before {
   position: absolute;
@@ -75,12 +87,20 @@
   content: "\f00d";
   color: #b71c1c;
 }
+.dir-rtl .h5p-drag-text .h5p-drag-wrong-feedback:before{
+  right: auto;
+  left: 0.3em;
+}
 
 /* Dropzone styling */
 .h5p-drag-text .h5p-drag-dropzone-container {
   position: relative;
   display: inline;
   padding-right: 0.1em;
+}
+.dir-rtl .h5p-drag-text .h5p-drag-dropzone-container{
+  padding-right: auto;
+  padding-left: 0.1em;
 }
 .h5p-drag-text .h5p-drag-dropzone {
   position:relative;
@@ -189,7 +209,10 @@
   display: inline;
   padding-left: 0.5em;
 }
-
+.dir-rtl .h5p-drag-text .h5p-drag-show-solution-container {
+  padding-left: initial;
+  padding-right: 0.5em;
+}
 .h5p-drag-text .h5p-drag-droppable-words {
   line-height: 1.75;
 }
@@ -208,6 +231,9 @@
 .h5p-drag-text .h5p-drag-wide-screen {
   float: right;
   padding-top: 0em;
+}
+.dir-rtl .h5p-drag-text .h5p-drag-wide-screen{
+  float: left;
 }
 
 .h5p-drag-text .h5p-drag-draggable-wide-screen {
